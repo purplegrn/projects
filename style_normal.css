@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+  }
+  
+  .bg{
+    display: flex;
+  }
+  .lvl {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    top: 20%; /* poussé de la moitié de hauteur du référent */
+    left:50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    
+  }
+    
+  
+input {
+    position: relative  ;
+    text-align: center;
+    vertical-align: middle;
+    width: 150px;
+    margin: 20px;
+    padding: 12px 0px 12px 0px;
+    font-size: 10pt;
+
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #008AC9;
+    text-transform: uppercase;
+  }
+
+
+.start {
+    position: relative  ;
+    text-align: center;
+    vertical-align: middle;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    padding: auto;
+    font-size: 15pt;
+    border: none;
+    border-radius: 100px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #008AC9;
+    text-transform: uppercase;
+}
+
+
+
+
+.radio {
+	
+	padding: 4px;
+	border-radius: 3px;
+	position: relative;
+}
+
+.radio input {
+	width: auto;
+	height: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 5px;
+    width: 150px;
+    margin: 20px;
+    padding: 12px 0px 12px 0px;
+    text-transform:uppercase ;
+    font-weight: 700;
+    background: #cde3ed;
+	color: #000000bd;
+	font-size: 10pt;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	transition: all 100ms linear;
+}
+
+.radio input:checked {
+    background: #008AC9;
+	color: #fff;
+	box-shadow: 0 1px 1px #0000002e;
+	text-shadow: 0 1px 0px #79485f7a;
+}
+
+.radio input:before {
+	content: attr(label);
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background: #ffffff;
+}
+
+.memory-game {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(25% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: #1C7CCC;
+  backface-visibility: hidden;
+  object-fit: contain;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+.side-info {
+margin: auto;
+}
+
+.btnRestart {
+position: relative  ;
+text-align: center;
+width: 175px;
+margin: 5px;
+padding: 12px 0px 12px 0px;
+font-size: 10pt;
+
+/* letter-spacing: 1.25pt; */
+border: none;
+border-radius: 5px;
+font-weight: 700;
+color: #ffffff;
+background-color: #008AC9;
+text-transform: uppercase;
+}
+
+@-webkit-keyframes tracking-in-expand-fwd {
+0% {
+  letter-spacing: -0.5em;
+  -webkit-transform: translateZ(-700px);
+          transform: translateZ(-700px);
+  opacity: 0;
+}
+40% {
+  opacity: 0.6;
+}
+100% {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  opacity: 1;
+}
+}
+@keyframes tracking-in-expand-fwd {
+0% {
+  letter-spacing: -0.5em;
+  -webkit-transform: translateZ(-700px);
+          transform: translateZ(-700px);
+  opacity: 0;
+}
+40% {
+  opacity: 0.6;
+}
+100% {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  opacity: 1;
+}
+}
+
+
+
+
+

@@ -1,0 +1,116 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+    
+    body {
+    height: 100vh;
+    display: flex;
+    background: #ffffff;
+    }
+    
+    .memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    }
+    
+    .memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.33333333333333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    }
+    
+    .memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+    }
+    
+    .memory-card.flip {
+    transform: rotateY(180deg);
+    }
+    
+    .front-face,
+    .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #1C7CCC;
+    backface-visibility: hidden;
+    object-fit: contain;
+    }
+    
+    .front-face {
+    transform: rotateY(180deg);
+    }
+    
+    .side-info {
+    margin: auto;
+    }
+    
+    .btnRestart {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    width: 175px;
+    margin: 5px;
+    padding: 12px 0px 12px 0px;
+    font-size: 10pt;
+    
+    /* letter-spacing: 1.25pt; */
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #008AC9;
+    text-transform: uppercase;
+    }
+    
+    
+    
+    @-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+          transform: translateZ(-700px);
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+    opacity: 1;
+    }
+    }
+    @keyframes tracking-in-expand-fwd {
+    0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+          transform: translateZ(-700px);
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+    opacity: 1;
+    }
+    }
+    

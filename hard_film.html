@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Memory Game</title>
+
+<link rel="stylesheet" href="style_hard.css">
+</head>
+<body>
+<canvas id="confetti-canvas" ></canvas>
+<div class="memory-game">
+<div class="memory-card" data-framework="oggy">
+<img class="front-face" src="images/oggy.png" alt="oggy" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="oggy">
+<img class="front-face" src="images/oggy.png" alt="oggy" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+
+<div class="memory-card" data-framework="marsupilami">
+<img class="front-face" src="images/marsupilami.png" alt="marsupilami" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="marsupilami">
+<img class="front-face" src="images/marsupilami.png" alt="marsupilami" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+
+<div class="memory-card" data-framework="franklin">
+<img class="front-face" src="images/franklin.png" alt="franklin" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="franklin">
+<img class="front-face" src="images/franklin.png" alt="franklin" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+
+<div class="memory-card" data-framework="tchoupi">
+<img class="front-face" src="images/tchoupi.png" alt="tchoupi" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="tchoupi">
+<img class="front-face" src="images/tchoupi.png" alt="tchoupi" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+
+<div class="memory-card" data-framework="lavie">
+<img class="front-face" src="images/lavie.png" alt="lavie" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="lavie">
+<img class="front-face" src="images/lavie.png" alt="lavie" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+
+<div class="memory-card" data-framework="caillou">
+<img class="front-face" src="images/caillou.png" alt="caillou" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="caillou">
+<img class="front-face" src="images/caillou.png" alt="caillou" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+
+<div class="memory-card" data-framework="barbapapa">
+<img class="front-face" src="images/barbapapa.png" alt="barbapapa" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="barbapapa">
+<img class="front-face" src="images/barbapapa.png" alt="barbapapa" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+
+<div class="memory-card" data-framework="pacman">
+<img class="front-face" src="images/pacman.png" alt="pacman" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="pacman">
+<img class="front-face" src="images/pacman.png" alt="pacman" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="ratatouille">
+<img class="front-face" src="images/ratatouille.png" alt="ratatouille" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="ratatouille">
+<img class="front-face" src="images/ratatouille.png" alt="ratatouille" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+
+<div class="memory-card" data-framework="kirikou">
+<img class="front-face" src="images/kirikou.png" alt="kirikou" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="kirikou">
+<img class="front-face" src="images/kirikou.png" alt="kirikou" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+
+<div class="memory-card" data-framework="ratz">
+<img class="front-face" src="images/ratz.png" alt="ratz" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="ratz">
+<img class="front-face" src="images/ratz.png" alt="ratz" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+
+<div class="memory-card" data-framework="garfield">
+<img class="front-face" src="images/garfield.png" alt="garfield" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="garfield">
+<img class="front-face" src="images/garfield.png" alt="garfield" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+</div>
+<div class = "side-info">
+<div id="win" class="bravo">
+</div>
+<div>
+<input type="button" class="btnRestart" value="Recommencer" onClick="history.go(0)">
+</div>
+<div>
+<input type="button" class="btnRestart" value="Changer de niveau" onclick="window.location.href = '///C:/Users/Stagiaire2/Desktop/Jeux/Memory/level.html'" >
+</div>
+</div>
+<script src="gameHard.js"></script>
+<script src="confetti.js"></script>
+</body>
+</html>

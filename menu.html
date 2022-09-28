@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level</title>
+<link rel="stylesheet" href="stylesMenu.css">
+</head>
+<body>
+<div class="bg">
+<div class="lvl">
+  <div>
+      <h1>Choisi un thème :</h1>
+      <div class="radio">
+          <input label="Film" type="radio" id="film" name="theme" value="film" checked>
+          <input label="Bande dessinée" type="radio" id="bd" name="theme" value="bd">
+          <input label="Auteur" type="radio" id="auteur" name="theme" value="auteur">
+      </div>
+  </div>
+  <div>
+      <h1>Choisi une difficulté :</h1>
+      <div class="radio">
+          <input label="Facile" type="radio" id="facile" name="level" value="easy" checked>
+          <input label="Normal" type="radio" id="normal" name="level" value="normal">
+          <input label="Difficile" type="radio" id="difficile" name="level" value="hard">
+      </div>
+  </div>
+  <div >
+      <button class="start" id="start" onclick="start()">Commencer</button>
+  </div>
+</div>
+</div>
+
+</div>
+<script src="menu.js"></script>
+</body>
+</html>

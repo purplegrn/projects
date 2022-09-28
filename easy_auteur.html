@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Memory Game</title>
+
+<link rel="stylesheet" href="style_easy.css">
+</head>
+<body>
+<canvas id="confetti-canvas" ></canvas>
+<div class="memory-game">
+<div class="memory-card" data-framework="fontaine">
+<img class="front-face" src="images/fontaine.png" alt="fontaine" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="fontaine">
+<img class="front-face" src="images/fontaine.png" alt="fontaine" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+
+<div class="memory-card" data-framework="moliere">
+<img class="front-face" src="images/moliere.png" alt="moliere" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="moliere">
+<img class="front-face" src="images/moliere.png" alt="moliere" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+
+<div class="memory-card" data-framework="sevigne">
+<img class="front-face" src="images/sevigne.png" alt="sevigne" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="sevigne">
+<img class="front-face" src="images/sevigne.png" alt="sevigne" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+
+<div class="memory-card" data-framework="stendhal">
+<img class="front-face" src="images/stendhal.png" alt="stendhal" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="stendhal">
+<img class="front-face" src="images/stendhal.png" alt="stendhal" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+
+<div class="memory-card" data-framework="zola">
+<img class="front-face" src="images/zola.png" alt="zola" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="zola">
+<img class="front-face" src="images/zola.png" alt="zola" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+
+<div class="memory-card" data-framework="fayette">
+<img class="front-face" src="images/fayette.png" alt="fayette" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+<div class="memory-card" data-framework="fayette">
+<img class="front-face" src="images/fayette.png" alt="fayette" />
+<img class="back-face" src="images/back.png" alt="Institut FR" />
+</div>
+</div>
+<div class = "side-info">
+<div id="win" class="bravo">
+</div>
+<div>
+<input type="button" class="btnRestart" value="Recommencer" onClick="history.go(0)">
+</div>
+<div>
+<input type="button" class="btnRestart" value="Changer de niveau" onclick="window.location.href = '///C:/Users/Stagiaire2/Desktop/Jeux/Memory/level.html'" >
+</div>
+</div>
+<script src="gameEasy.js"></script>
+<script src="confetti.js"></script>
+</body>
+</html>
